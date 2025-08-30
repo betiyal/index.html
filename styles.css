@@ -1,0 +1,198 @@
+/* ---------------------------
+   Global Styles
+---------------------------- */
+body {
+    background-color: #f9fafc;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #ff4b5c;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* Welcome Section */
+.box-1 {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.box-1 h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Products Section */
+.box-2 {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.box-2 h1 {
+    color: #2575fc;
+    margin-bottom: 15px;
+}
+
+.box-2 ol {
+    margin-left: 20px;
+}
+
+/* Categories Section */
+.categories {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.categories h2 {
+    text-align: center;
+    color: #6a11cb;
+    margin-bottom: 15px;
+}
+
+.categories li {
+    padding: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.categories li:last-child {
+    border-bottom: none;
+}
+
+/* Form Section */
+.my-form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.my-form input[type="text"]:focus,
+.my-form textarea:focus {
+    border-color: #2575fc;
+}
+
+/* Button */
+.button {
+    background: #2575fc;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #6a11cb;
+}
+
+/* Testimonials Section */
+.block {
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+}
+
+.block h3 {
+    margin-top: 0;
+    color: #2575fc;
+    font-size: 18px;
+}
+
+/* Clear Floats */
+.container::after,
+body::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .block {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .block {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
